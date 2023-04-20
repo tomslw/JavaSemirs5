@@ -21,4 +21,10 @@ public class FirstController {
 		return "msg-page";
 	}
 	
+	@GetMapping("/new-prod")
+	public String getNewProduct(Model model) {
+		model.addAttribute("message", "this is a message");
+		return "prod-page";
+	}
+	
 }
