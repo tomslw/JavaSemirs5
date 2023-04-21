@@ -3,7 +3,6 @@ package lv.venta.models;
 public class Product {
 	private static long itCounter = 0;
 	
-	
 	private long id;
 	private String title;
 	private String description;
@@ -18,12 +17,13 @@ public class Product {
 		this.quantity = 0;
 	}
 	
-	public Product(String title, String description, int quantity) {
+	public Product(String title, String description, int quantity, float price) {
 		super();
 		this.id = itCounter++;
 		this.title = title;
 		this.description = description;
 		this.quantity = quantity;
+		this.price = price;
 	}
 
 	public String getTitle() {
